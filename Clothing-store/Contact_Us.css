@@ -1,0 +1,476 @@
+/* ==========================================
+   1. RESET & BASE STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #333333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ==========================================
+   2. TOP ANNOUNCEMENT BAR
+   ========================================== */
+.top-bar {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 15px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+/* ==========================================
+   3. HEADER & NAVIGATION
+   ========================================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+header .logo img {
+  max-height: 35px;
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333333;
+}
+
+nav ul li a:hover,
+nav ul li a[href="Contact_Us.html"] {
+  color: #e63946;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-icons a {
+  font-size: 18px;
+  color: #333333;
+}
+
+.header-icons a:hover {
+  color: #e63946;
+}
+
+/* ==========================================
+   4. HERO SECTION
+   ========================================== */
+.hero-section {
+  background-color: #f7f0f0;
+  text-align: center;
+  padding: 60px 20px 80px 20px;
+}
+
+.hero-section h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.hero-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   5. CONTACT SECTION & CARDS
+   ========================================== */
+.contact-section {
+  padding: 60px 0 80px 0;
+  background-color: #ffffff;
+  margin-top: -30px; /* Slight overlap for smooth flow */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 950px;
+}
+
+.card {
+  background-color: #f8f2f2;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+/* Form Card */
+.form-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #111111;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e0d8d8;
+  border-radius: 6px;
+  background-color: #f3ebeb;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #e63946;
+  background-color: #ffffff;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.checkbox-group input {
+  margin-top: 3px;
+}
+
+.btn-submit {
+  background-color: #e63946;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #d62828;
+}
+
+/* Info Card */
+.info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-box {
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e63946;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  flex-shrink: 0;
+}
+
+.info-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 2px;
+}
+
+.info-item p {
+  font-size: 13px;
+  color: #666666;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.social-links a {
+  color: #333333;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: #e63946;
+}
+
+/* ==========================================
+   6. SUPPORT TOPICS SECTION
+   ========================================== */
+.topics-section {
+  background-color: #f7f0f0;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.topics-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111111;
+}
+
+.section-desc {
+  font-size: 14px;
+  color: #666666;
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: left;
+}
+
+.topic-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.topic-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.topic-card ul li {
+  margin-bottom: 8px;
+}
+
+.topic-card ul li a {
+  font-size: 13px;
+  color: #555555;
+  text-decoration: underline;
+}
+
+.topic-card ul li a:hover {
+  color: #e63946;
+}
+
+/* ==========================================
+   7. FOOTER SECTION
+   ========================================== */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 60px 0 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-col h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #aaaaaa;
+  margin: 15px 0 20px 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.footer-col ul li a:hover,
+.footer-col ul li a.active {
+  color: #ffffff;
+}
+
+.brand-col img {
+  max-height: 35px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #222222;
+  margin: 40px 0 20px 0;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #888888;
+}
+
+.scroll-top {
+  background-color: #222222;
+  color: #ffffff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-top:hover {
+  background-color: #e63946;
+}
+
+/* ==========================================
+   8. RESPONSIVE DESIGN (TABLET & MOBILE)
+   ========================================== */
+
+/* Tablet Screens (Max Width: 992px) */
+@media (max-width: 992px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .brand-col {
+    grid-column: span 3;
+  }
+}
+
+/* Mobile Screens (Max Width: 768px) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  nav ul {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 30px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .brand-col {
+    grid-column: span 1;
+  }
+
+  .social-icons,
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
